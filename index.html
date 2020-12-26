@@ -21,13 +21,13 @@
                 <li><a href="#contacts"> Контакты</a></li>
             </ul>
             <ul class="nav-contacts">
-                <li><a class="mail" href="mailto:info@devstudio.com">
+                <li><a href="mailto:info@devstudio.com">
                     <svg class="envelope">
                         <use href="./images/icons/sprite.svg#icon-envelope"></use>
                     
                     </svg>
                     info@devstudio.com</a></li>
-                <li><a class="phone" href="tel:+380961111111">
+                <li><a  href="tel:+380961111111">
                     <svg class="smartphone">
                         <use href="./images/icons/sprite.svg#icon-smartphone"></use>
                     
@@ -37,18 +37,51 @@
 
         </nav>
     </header>
-    <main id="studio" >
+    <main>
         <section class="efective-solution">
             <h1>Эффективные решения <br> для вашего бизнеса</h1>
             <!--Modal window-->
             <button class="order-service" data-modal-open >Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
-                        <div class="modal">
+                        <div class="modal">  
+                            <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
                             <button class="close-btn" data-modal-close>
                                 <svg class="svg-close">
                                     <use href="./images/icons/symbol.svg#icon-Vector-1"></use>
                                 </svg>
                             </button>
+                          
+                            <form class="form-modal">
+                                <div class="form-field">
+                                    <label for="name">Имя</label>
+                                    <input type="text" id="name"/>
+                                </div>
+                                <div class="form-field">
+                                    <label for="tel">Телефон</label>
+                                    <input type="tel" id="tel"/>
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Почта</label>
+                                    <input type="email" id="email"/>
+                                </div>
+                                <div class="form-field" >
+                                    <label for="comments">Комментарии</label>
+                                    <textarea
+                                        placeholder="Введите текст"
+                                        name="text"
+                                        id="comments" 
+                                        rows="5"  
+                                        class="comments "> 
+                                    </textarea>
+                                </div>
+                                <div class="agreement">
+                                   <input type="checkbox" name="result" value="" id="result">
+                                   <label for="result">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label> 
+                                   
+                                    
+                                </div>
+                                <button type="submit" class="send">Отправить</button>
+                            </form>
                         </div>
             </div>
         </section>
@@ -300,7 +333,7 @@
        <section class="clients">
         <h2 class="head2">Постоянные клиенты </h2>
         <ul class="clients-tag">
-            <li class="clients-list"> 
+            <li> 
                 <a href="#" class="company-link">
                     <svg class="logo1">
                         <use href="./images/icons/sprite.svg#icon-logo-1"></use>

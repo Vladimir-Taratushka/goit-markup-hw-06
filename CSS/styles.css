@@ -189,12 +189,12 @@ main {
   left: 50%;
   width: 528px;
   height: 581px;
-  display: flex;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
 }
 .close-btn {
   position: absolute;
@@ -213,6 +213,107 @@ main {
 .svg-close {
   width: 11px;
   height: 11px;
+}
+.modal-header {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 12px;
+}
+/*Форма модального окна*/
+.form-modal {
+  width: 100%;
+  font-family: "Roboto" sans-serif;
+  font-size: 12px;
+  color: #212121;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.form-field input {
+  padding: 11px 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  margin-bottom: 10px;
+}
+.form-field label {
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #757575;
+}
+.comments {
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 448px;
+  height: 120px;
+}
+.agreement {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+  margin-bottom: 30px;
+}
+.agreement label a {
+  position: relative;
+  color: #2196f3;
+}
+.agreement label a::after {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #2196f3;
+}
+.form-textarea::placeholder {
+  background-color: rgba(117, 117, 117, 0.5);
+  text-align: left;
+}
+
+.send {
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
 }
 /*Чем мы занимаемся*/
 .icon-box {
