@@ -75,18 +75,14 @@
                                 </div>
                                 <div class="form-field" >
                                     <label for="comments"class="form-label">Комментарии</label>
-                                    <textarea
-                                        name="text"
-                                        id="comments"   
-                                        placeholder="Введите текст" 
-                                        class="comments"> 
-                                    </textarea>
+                                    <textarea class="comments" name="text" id="comments" cols="30" rows="10" placeholder="Введите текст" ></textarea>
                                 </div>
                                 <div class="agreement">
-                                   <input type="checkbox" name="result" value="" id="result" class="checkbox">
-                                   <label for="result">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label> 
-                                   
-                                    
+                                   <label class="check-lable">
+                                       <input type="checkbox" name="result" value="" class="checkbox">
+                                       <span class="check-blok"> </span>
+                                       Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                                 </label> 
                                 </div>
                                 <button type="submit" class="send">Отправить</button>
                             </form>
