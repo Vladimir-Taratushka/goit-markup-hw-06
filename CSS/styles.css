@@ -44,6 +44,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   cursor: pointer;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-links a::after {
   position: absolute;
@@ -213,6 +214,7 @@ main {
 .svg-close {
   width: 11px;
   height: 11px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-header {
   font-family: Roboto;
@@ -250,6 +252,7 @@ main {
   border-color: rgba(33, 33, 33, 0.2);
   margin-bottom: 10px;
   padding-left: 40px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-label {
   margin-bottom: 4px;
@@ -268,6 +271,7 @@ main {
   position: absolute;
   top: 30px;
   left: 14px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tag-man {
   width: 13px;
@@ -275,6 +279,7 @@ main {
   position: absolute;
   top: 30px;
   left: 14px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tag-envelop {
   width: 15px;
@@ -282,6 +287,7 @@ main {
   position: absolute;
   top: 30px;
   left: 14px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comments {
   padding: 11px 12px;
@@ -298,6 +304,7 @@ main {
   width: 448px;
   height: 120px;
   color: #212121;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agreement {
   font-family: Roboto;
@@ -605,12 +612,7 @@ main {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-}
-.social-icon {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-icon {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-list:not(:last-child) {
   margin-right: 10px;
@@ -620,24 +622,19 @@ main {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-list :hover {
+.link:hover {
   background-color: #2196f3;
 }
-.social-icon :hover {
-  fill: #ffffff;
-}
-.link-list :hover .social-icon {
+.link:hover .social-icon {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.link-list :focus {
+.link:focus {
   background-color: #2196f3;
 }
-.social-icon :focus {
-  fill: #ffffff;
-}
-.link-list :focus .social-icon {
+.link:focus .social-icon {
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -666,78 +663,85 @@ main {
   box-sizing: border-box;
   width: 170px;
   height: 90px;
-  border: solid 2px #afb1b8;
+  border: solid 1px #afb1b8;
   border-radius: 3px;
   background-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo1 {
   width: 44px;
   height: 49px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo2 {
   width: 40px;
   height: 52px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo3 {
   width: 41px;
   height: 42px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo4 {
   width: 80px;
   height: 42px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo5 {
   width: 59px;
   height: 47px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo6 {
   width: 88px;
   height: 45px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-tag a:hover {
+.company-link:hover {
   border-color: #2196f3;
 }
-.clients-tag .logo1 :hover,
-.clients-tag .logo2 :hover,
-.clients-tag .logo3 :hover,
-.clients-tag .logo4 :hover,
-.clients-tag .logo5 :hover,
-.clients-tag .logo6 :hover {
+.company-link .logo1 :hover,
+.company-link .logo2 :hover,
+.company-link .logo3 :hover,
+.company-link .logo4 :hover,
+.company-link .logo5 :hover,
+.company-link .logo6 :hover {
   fill: #2196f3;
 }
 
-.clients-tag a:hover .logo1,
-.clients-tag a:hover .logo2,
-.clients-tag a:hover .logo3,
-.clients-tag a:hover .logo4,
-.clients-tag a:hover .logo5,
-.clients-tag a:hover .logo6 {
+.company-link:hover .logo1,
+.company-link:hover .logo2,
+.company-link:hover .logo3,
+.company-link:hover .logo4,
+.company-link:hover .logo5,
+.company-link:hover .logo6 {
   fill: #2196f3;
 }
 .clients-tag a:focus {
   border-color: #2196f3;
 }
-.clients-tag .logo1 :focus,
-.clients-tag .logo2 :focus,
-.clients-tag .logo3 :focus,
-.clients-tag .logo4 :focus,
-.clients-tag .logo5 :focus,
-.clients-tag .logo6 :focus {
+.company-link .logo1 :focus,
+.company-link .logo2 :focus,
+.company-link .logo3 :focus,
+.company-link .logo4 :focus,
+.company-link .logo5 :focus,
+.company-link .logo6 :focus {
   fill: #2196f3;
 }
 
-.clients-tag a:focus .logo1,
-.clients-tag a:focus .logo2,
-.clients-tag a:focus .logo3,
-.clients-tag a:focus .logo4,
-.clients-tag a:focus .logo5,
-.clients-tag a:focus .logo6 {
+.company-link:focus .logo1,
+.company-link:focus .logo2,
+.company-link:focus .logo3,
+.company-link:focus .logo4,
+.company-link:focus .logo5,
+.company-link:focus .logo6 {
   fill: #2196f3;
 }
 /* footer*/
@@ -759,9 +763,14 @@ footer {
 .links-title {
   display: block;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 14;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -866,6 +875,7 @@ footer {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-link-icon:not(:last-child) {
@@ -901,7 +911,6 @@ footer {
   padding-inline-start: 0px;
   display: flex;
   justify-content: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-buttons :not(:last-child) {
   margin-right: 8px;
@@ -916,6 +925,7 @@ footer {
   font-weight: 500;
   background-color: #f5f4fa;
   border: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .b-web {
   width: 128px;
@@ -926,6 +936,7 @@ footer {
   font-weight: 500;
   background-color: #f5f4fa;
   border: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .b-app {
   width: 145px;
@@ -936,6 +947,7 @@ footer {
   font-weight: 500;
   background-color: #f5f4fa;
   border: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .b-disigne {
   width: 103px;
@@ -946,6 +958,7 @@ footer {
   font-weight: 500;
   background-color: #f5f4fa;
   border: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .b-mark {
   width: 130px;
@@ -956,6 +969,7 @@ footer {
   font-weight: 500;
   background-color: #f5f4fa;
   border: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*эффект Ховер на кнопки*/
 
@@ -999,7 +1013,7 @@ footer {
 }
 .portfolio-list {
   width: 370px;
-  /* height: 404px;*/
+  height: 404px;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -1013,7 +1027,8 @@ footer {
   width: 370px;
   height: auto;
   padding-bottom: 20px;
-  /*height: 404px;*/
+  height: 404px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-links:hover,
 .portfolio-links:focus {
